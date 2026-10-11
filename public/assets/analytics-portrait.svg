@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1200" viewBox="0 0 960 1200" fill="none">
+  <defs>
+    <linearGradient id="frame" x1="120" y1="160" x2="810" y2="980" gradientUnits="userSpaceOnUse"><stop stop-color="#24202c"/><stop offset="1" stop-color="#080a12"/></linearGradient>
+    <linearGradient id="red" x1="200" y1="240" x2="690" y2="820" gradientUnits="userSpaceOnUse"><stop stop-color="#ff3d5a"/><stop offset="1" stop-color="#8b1831"/></linearGradient>
+    <linearGradient id="blue" x1="290" y1="400" x2="700" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#7de8ff"/><stop offset="1" stop-color="#2582b8"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(440 0 0 540 510 500)" gradientUnits="userSpaceOnUse"><stop stop-color="#ff3d5a" stop-opacity=".26"/><stop offset="1" stop-color="#ff3d5a" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="22" y="34" width="916" height="1130" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <ellipse cx="520" cy="555" rx="420" ry="510" fill="url(#glow)"/>
+  <ellipse cx="506" cy="1040" rx="315" ry="55" fill="#000" opacity=".35" filter="url(#shadow)"/>
+  <g transform="rotate(-5 480 600)">
+    <rect x="92" y="190" width="770" height="785" rx="34" fill="#010207" stroke="#ff3d5a" stroke-opacity=".38" stroke-width="3"/>
+    <rect x="116" y="214" width="722" height="737" rx="23" fill="url(#frame)" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+    <rect x="142" y="241" width="670" height="65" rx="13" fill="#141522" stroke="#ffffff" stroke-opacity=".1"/>
+    <circle cx="168" cy="273" r="7" fill="#ff3d5a"/>
+    <circle cx="190" cy="273" r="7" fill="#ffb547"/>
+    <circle cx="212" cy="273" r="7" fill="#46e3a8"/>
+    <text x="244" y="281" font-family="Inter,Arial,sans-serif" font-size="19" letter-spacing="4" fill="#e9e7ec">ANALYTICS OVERVIEW</text>
+    <rect x="144" y="332" width="204" height="126" rx="17" fill="#171b29" stroke="#4cc9ff" stroke-opacity=".38"/>
+    <rect x="367" y="332" width="204" height="126" rx="17" fill="#171b29" stroke="#ff3d5a" stroke-opacity=".38"/>
+    <rect x="590" y="332" width="203" height="126" rx="17" fill="#171b29" stroke="#46e3a8" stroke-opacity=".38"/>
+    <text x="164" y="365" font-family="Inter,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#a7a6b3">CONVERSION</text>
+    <text x="164" y="417" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700" fill="#f5f1f0">KPI</text>
+    <path d="M270 420 l16 -20 15 10 22 -29" stroke="#4cc9ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="387" y="365" font-family="Inter,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#a7a6b3">CAMPAIGNS</text>
+    <text x="387" y="417" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700" fill="#f5f1f0">ROAS</text>
+    <text x="610" y="365" font-family="Inter,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#a7a6b3">CUSTOMERS</text>
+    <text x="610" y="417" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700" fill="#f5f1f0">LTV</text>
+    <rect x="144" y="483" width="405" height="278" rx="18" fill="#121622" stroke="#ffffff" stroke-opacity=".1"/>
+    <text x="167" y="518" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2" fill="#dcdbe3">PERFORMANCE TRENDS</text>
+    <path d="M178 710 H518 M178 565 V710" stroke="#777b8c" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M178 600 H518 M178 637 H518 M178 674 H518" stroke="#777b8c" stroke-opacity=".19" stroke-width="1.5"/>
+    <rect x="203" y="650" width="32" height="60" rx="6" fill="#ff3d5a" fill-opacity=".45"/>
+    <rect x="252" y="626" width="32" height="84" rx="6" fill="#ff3d5a" fill-opacity=".6"/>
+    <rect x="301" y="610" width="32" height="100" rx="6" fill="#4cc9ff" fill-opacity=".55"/>
+    <rect x="350" y="585" width="32" height="125" rx="6" fill="#4cc9ff" fill-opacity=".7"/>
+    <rect x="399" y="570" width="32" height="140" rx="6" fill="#46e3a8" fill-opacity=".6"/>
+    <rect x="448" y="544" width="32" height="166" rx="6" fill="#46e3a8" fill-opacity=".8"/>
+    <path d="M200 620 L266 605 L316 617 L365 571 L415 586 L477 550" stroke="#f7b955" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="200" cy="620" r="5" fill="#f7b955"/><circle cx="266" cy="605" r="5" fill="#f7b955"/><circle cx="316" cy="617" r="5" fill="#f7b955"/><circle cx="365" cy="571" r="5" fill="#f7b955"/><circle cx="415" cy="586" r="5" fill="#f7b955"/><circle cx="477" cy="550" r="5" fill="#f7b955"/>
+    <rect x="568" y="483" width="225" height="278" rx="18" fill="#121622" stroke="#ffffff" stroke-opacity=".1"/>
+    <text x="590" y="518" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="2" fill="#dcdbe3">CHANNEL MIX</text>
+    <circle cx="680" cy="623" r="62" stroke="#ff3d5a" stroke-width="20" stroke-opacity=".8"/>
+    <path d="M680 561 A62 62 0 0 1 738 645" stroke="#4cc9ff" stroke-width="20" stroke-linecap="round"/>
+    <path d="M737 645 A62 62 0 0 1 633 666" stroke="#46e3a8" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="680" cy="623" r="35" fill="#121622"/>
+    <text x="680" y="628" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="#f5f1f0">DATA</text>
+    <circle cx="596" cy="711" r="5" fill="#ff3d5a"/><text x="610" y="716" font-family="Inter,Arial,sans-serif" font-size="12" fill="#c8c7d1">Paid</text>
+    <circle cx="672" cy="711" r="5" fill="#4cc9ff"/><text x="686" y="716" font-family="Inter,Arial,sans-serif" font-size="12" fill="#c8c7d1">Organic</text>
+    <circle cx="754" cy="711" r="5" fill="#46e3a8"/><text x="768" y="716" font-family="Inter,Arial,sans-serif" font-size="12" fill="#c8c7d1">Email</text>
+    <rect x="144" y="786" width="649" height="133" rx="17" fill="#121622" stroke="#ffffff" stroke-opacity=".1"/>
+    <text x="168" y="821" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="2" fill="#dcdbe3">CUSTOMER JOURNEY</text>
+    <path d="M182 864 H753" stroke="#7c7e8d" stroke-width="2" stroke-dasharray="5 9"/>
+    <rect x="177" y="843" width="118" height="42" rx="10" fill="#4cc9ff" fill-opacity=".18" stroke="#4cc9ff" stroke-opacity=".65"/>
+    <rect x="324" y="843" width="118" height="42" rx="10" fill="#ffb547" fill-opacity=".18" stroke="#ffb547" stroke-opacity=".65"/>
+    <rect x="471" y="843" width="118" height="42" rx="10" fill="#ff3d5a" fill-opacity=".18" stroke="#ff3d5a" stroke-opacity=".65"/>
+    <rect x="618" y="843" width="118" height="42" rx="10" fill="#46e3a8" fill-opacity=".18" stroke="#46e3a8" stroke-opacity=".65"/>
+    <text x="236" y="869" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e7e6eb">VIEW</text>
+    <text x="383" y="869" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e7e6eb">CART</text>
+    <text x="530" y="869" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e7e6eb">CHECKOUT</text>
+    <text x="677" y="869" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" fill="#e7e6eb">PURCHASE</text>
+  </g>
+  <g transform="translate(155 1007)">
+    <rect width="650" height="111" rx="23" fill="#10111a" stroke="#ff3d5a" stroke-opacity=".55" stroke-width="2"/>
+    <text x="32" y="39" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="4" fill="#ff3d5a">THANGAMANI K</text>
+    <text x="32" y="75" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="5" fill="#f5f1f0">DATA ANALYST</text>
+    <g transform="translate(496 22)" stroke="#4cc9ff" stroke-width="5" stroke-linecap="round" fill="none"><path d="M0 62 V38 H18 V62 M28 62 V20 H46 V62 M56 62 V0 H74 V62 M84 62 V30 H102 V62"/><path d="M-6 72 H110" stroke-opacity=".5" stroke-width="2"/></g>
+  </g>
+</svg>
