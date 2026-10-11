@@ -74,7 +74,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
 
       {/* portrait */}
       <motion.div
-        className="absolute inset-x-0 top-12 z-[2] flex h-[64svh] items-end justify-center sm:h-[70svh] lg:bottom-0 lg:left-auto lg:right-[3vw] lg:top-20 lg:h-auto lg:w-[54vw] xl:right-[6vw] xl:w-[48vw]"
+        className="absolute inset-x-0 top-12 z-[2] flex h-[50svh] items-end justify-center sm:h-[70svh] lg:bottom-0 lg:left-auto lg:right-[3vw] lg:top-20 lg:h-auto lg:w-[54vw] xl:right-[6vw] xl:w-[48vw]"
         style={{ y: imgY, scale: imgScale, opacity: fade }}
       >
         <motion.div
@@ -111,7 +111,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
 
       {/* copy */}
       <motion.div
-        className="gutter relative z-[4] flex min-h-[100svh] flex-col justify-end pb-16 pt-[54svh] sm:pb-20 lg:max-w-[52vw] lg:justify-center lg:pb-0 lg:pt-24"
+        className="gutter relative z-[4] flex min-h-[100svh] flex-col justify-end pb-16 pt-[56svh] sm:pb-20 sm:pt-[54svh] lg:max-w-[52vw] lg:justify-center lg:pb-0 lg:pt-24"
         style={{ y: textY, opacity: fade }}
         variants={container}
         initial="hidden"
@@ -120,10 +120,10 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
         <motion.div variants={item} className="mb-3 text-[27px]">
           <SeriesMark />
         </motion.div>
-        <motion.h1 variants={item} className="font-display leading-[0.82] tracking-[0.02em] text-bone" style={{ fontSize: 'clamp(4rem, 12vw, 11rem)' }}>
+        <motion.h1 variants={item} className="font-display text-[clamp(2.75rem,14vw,4rem)] leading-[0.82] tracking-[0.02em] text-bone sm:text-[clamp(4rem,12vw,11rem)]">
           <span className="shimmer-text">{profile.firstName}</span>
         </motion.h1>
-        <motion.p variants={item} className="mt-1 font-sans text-[25px] font-bold tracking-[0.62em] text-crimson-2 sm:text-[27px]">
+        <motion.p variants={item} className="mt-1 font-sans text-[25px] font-bold tracking-[0.25em] text-crimson-2 sm:text-[27px] sm:tracking-[0.62em]">
           {profile.seriesTag}
         </motion.p>
 
@@ -151,21 +151,21 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
               type="button"
               data-cursor="play"
               onClick={onPlay}
-              className="flex min-h-12 items-center gap-3 rounded-md bg-bone px-6 py-3 text-[27px] font-bold text-ink transition hover:bg-white sm:px-8"
+              className="flex min-h-12 items-center gap-3 rounded-md bg-bone px-4 py-3 text-[27px] font-bold text-ink transition hover:bg-white sm:px-8"
             >
               <span className="text-[27px]">▶</span> Play Intro
             </button>
           </Magnetic>
           <Magnetic>
             {profileId === 'recruiter' ? (
-              <button type="button" onClick={onResume} className="glass flex min-h-12 items-center gap-3 rounded-md px-6 py-3 text-[27px] font-semibold text-bone transition hover:bg-white/15 sm:px-8">
+              <button type="button" onClick={onResume} className="glass flex min-h-12 items-center gap-3 rounded-md px-4 py-3 text-[27px] font-semibold text-bone transition hover:bg-white/15 sm:px-8">
                 <span className="text-[27px]">⤓</span> View Resume
               </button>
             ) : (
               <button
                 type="button"
                 onClick={() => scrollTo('#originals')}
-                className="glass flex min-h-12 items-center gap-3 rounded-md px-6 py-3 text-[27px] font-semibold text-bone transition hover:bg-white/15 sm:px-8"
+                className="glass flex min-h-12 items-center gap-3 rounded-md px-4 py-3 text-[27px] font-semibold text-bone transition hover:bg-white/15 sm:px-8"
               >
                 <span className="text-2xl leading-none">＋</span> My Work
               </button>

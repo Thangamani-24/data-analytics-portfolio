@@ -156,10 +156,37 @@ a:focus-visible {
 }
 
 
-/* Readability baseline: readable copy across all portfolio sections. */
+/* Scale fixed-size desktop type down on narrow screens. */
 @media (max-width: 640px) {
   body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  [class~="text-[30px]"],
+  [class~="text-[29px]"] {
+    font-size: 21px;
+  }
+
+  [class~="text-[27px]"] {
+    font-size: 20px;
+  }
+
+  [class~="text-[25px]"],
+  [class~="text-[24px]"] {
     font-size: 19px;
-    line-height: 1.65;
+  }
+
+  [class~="text-[23px]"] {
+    font-size: 18px;
+  }
+
+  [class~="text-[22px]"] {
+    font-size: 17px;
+  }
+
+  [class~="text-[21px]"],
+  [class~="text-[20px]"] {
+    font-size: 16px;
   }
 }
