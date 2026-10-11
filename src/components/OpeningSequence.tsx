@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { profile } from '../data/portfolio';
-import { useReducedMotionPref } from '../hooks/useMedia';
+import { useDesktop, useReducedMotionPref } from '../hooks/useMedia';
 import { EASE, Magnetic } from './fx';
 
 /**
@@ -18,6 +18,7 @@ const TIMELINE = [
 ];
 
 export default function OpeningSequence({ onDone }: { onDone: () => void }) {
+  const desktop = useDesktop();
   const reduced = useReducedMotionPref();
   const [beat, setBeat] = useState(reduced ? 6 : 0);
 
@@ -101,18 +102,17 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
       {/* title */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center">
         <motion.h1
-          className="font-display leading-[0.82] text-bone drop-shadow-[0_8px_40px_rgba(0,0,0,0.8)]"
-          style={{ fontSize: 'clamp(4.6rem, 20vw, 15rem)' }}
+          className="font-display text-[clamp(2.6rem,12vw,8rem)] leading-[0.82] text-bone drop-shadow-[0_8px_40px_rgba(0,0,0,0.8)] lg:text-[clamp(4.6rem,20vw,15rem)]"
           initial={{ opacity: 0, scale: 1.3, filter: 'blur(20px)', letterSpacing: '0.5em' }}
-          animate={beat >= 2 ? { opacity: 1, scale: 1, filter: 'blur(0px)', letterSpacing: '0.04em', y: beat >= 4 ? '-30vh' : 0 } : {}}
+          animate={beat >= 2 ? { opacity: 1, scale: 1, filter: 'blur(0px)', letterSpacing: desktop ? '0.04em' : '0.01em', y: beat >= 4 ? (desktop ? '-30vh' : '-17vh') : 0 } : {}}
           transition={{ duration: 1.3, ease: EASE }}
         >
           {profile.firstName}
         </motion.h1>
         <motion.p
-          className="font-sans text-[25px] font-bold text-crimson-2 [text-shadow:0_2px_20px_rgba(0,0,0,0.9)] sm:text-[27px]"
+          className="font-sans text-[20px] font-bold text-crimson-2 [text-shadow:0_2px_20px_rgba(0,0,0,0.9)] sm:text-[27px]"
           initial={{ opacity: 0, letterSpacing: '1.4em' }}
-          animate={beat >= 3 ? { opacity: 1, letterSpacing: '0.7em', y: beat >= 4 ? '-30vh' : 0 } : {}}
+          animate={beat >= 3 ? { opacity: 1, letterSpacing: desktop ? '0.7em' : '0.16em', y: beat >= 4 ? (desktop ? '-30vh' : '-17vh') : 0 } : {}}
           transition={{ duration: 1.1, ease: EASE }}
         >
           {profile.seriesTag}
@@ -147,7 +147,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
       <button
         type="button"
         onClick={onDone}
-        className="absolute right-4 top-[calc(7vh+12px)] z-40 rounded-full border border-white/20 px-4 py-2 font-sans text-[23px] font-semibold tracking-[0.14em] text-mist transition hover:border-white/60 hover:text-bone"
+        className="absolute right-3 top-[calc(7vh+8px)] z-40 rounded-full border border-white/20 px-3 py-1.5 font-sans text-[13px] font-semibold tracking-[0.1em] text-mist transition hover:border-white/60 hover:text-bone sm:right-4 sm:top-[calc(7vh+12px)] sm:px-4 sm:py-2 sm:text-[23px] sm:tracking-[0.14em]"
       >
         SKIP INTRO
       </button>
